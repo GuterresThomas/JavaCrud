@@ -21,13 +21,20 @@ public class Product {
 
     private Integer price_in_cents;
 
+    private Boolean active;
+
     public Product(RequestProduct requestProduct) {
         this.name = requestProduct.name();
         this.price_in_cents = requestProduct.price_in_cents();
+        this.active = true;
     }
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public void setActive(Boolean active) {
+        this.active = active;
     }
 
     public void setPrice_in_cents(Integer price_in_cents) {
