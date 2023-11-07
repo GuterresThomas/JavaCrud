@@ -17,6 +17,6 @@ public class ProductController {
     @GetMapping
     public ResponseEntity getAllProducts() {
         var allProducts = repository.findAll();
-        return ResponseEntity.ok("deu bom fml");
+        return ResponseEntity.ok(allProducts);
     }
 }
